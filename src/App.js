@@ -11,6 +11,8 @@ import Zen from './sidebarcomponents/Zen';
 import Courses from './sidebarcomponents/Courses';
 import Codekata from './sidebarcomponents/Codekata';
 import Debagging from './sidebarcomponents/Debagging';
+import Webkata from './sidebarcomponents/Webkata';
+import Leaderboard from './sidebarcomponents/Leaderboard';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
                   <Route path="/courses" element={<Courses/>}/>
                   <Route path="/codekata" element={<Codekata/>}/>
                   <Route path="/debagging" element={<Debagging/>}/>
+                  <Route path="/webkata" element={<Webkata/>}/>
+                  <Route path="/leaderboard" element={<Leaderboard/>}/>
 
                 </Routes>
 

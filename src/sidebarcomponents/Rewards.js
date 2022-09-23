@@ -36,13 +36,13 @@ function Rewards() {
                 {
                     data.map((item) => {
                        return  <div className="col-lg-4">
-                       <div class="card shadow-lg p-3 mb-5 bg-white rounded" >
-                           <div class="card-body">
-                               <h5 class="card-title">{item.name}</h5>
-                               <h6 class="card-subtitle mb-2 text-muted">{item.offer}</h6>
+                       <div className="card shadow-lg p-3 mb-5 bg-white rounded" >
+                           <div className="card-body">
+                               <h5 className="card-title">{item.name}</h5>
+                               <h6 className="card-subtitle mb-2 text-muted">{item.offer}</h6>
                                
-                               <h4  class="card-link">{item.rs}</h4>
-                               <button href="index.html" class="card-link bg-success">redeem</button>
+                               <h4  className="card-link">{item.rs}</h4>
+                               <button href="index.html" className="card-link bg-success">redeem</button>
                            </div>
                        </div>
                    </div>

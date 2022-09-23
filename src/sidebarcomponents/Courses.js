@@ -26,12 +26,12 @@ function Courses() {
             <div className="row">
                 <div className="col-sm-12">
                     <nav className="navbar">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <a href="index.html" class="navbar-brand">Course Library</a>
-                                <a href="index.html" class="navbar-brand">Combo</a>
-                                <a href="index.html" class="navbar-brand">Free Library</a>
-                                <a href="index.html" class="navbar-brand">My Courses</a>
+                        <div className="container-fluid">
+                            <div className="navbar-header">
+                                <a href="index.html" className="navbar-brand">Course Library</a>
+                                <a href="index.html" className="navbar-brand">Combo</a>
+                                <a href="index.html" className="navbar-brand">Free Library</a>
+                                <a href="index.html" className="navbar-brand">My Courses</a>
                             </div>
                         </div>
                     </nav>
@@ -47,13 +47,13 @@ function Courses() {
                 {
                     data.map((item) => {
                        return  <div className="col-lg-4">
-                       <div class="card shadow-lg p-3 mb-5 bg-white rounded" >
-                           <div class="card-body">
-                               <h5 class="card-title">{item.name}</h5>
-                               <h6 class="card-subtitle mb-2 text-muted">{item.offer}</h6>
+                       <div className="card shadow-lg p-3 mb-5 bg-white rounded" >
+                           <div className="card-body">
+                               <h5 className="card-title">{item.name}</h5>
+                               <h6 className="card-subtitle mb-2 text-muted">{item.offer}</h6>
                                
                                
-                               <a href="index.html" class="card-link success">Learn for FREE</a>
+                               <a href="index.html" className="card-link success">Learn for FREE</a>
                            </div>
                        </div>
                    </div>

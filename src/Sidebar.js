@@ -3,74 +3,70 @@ import { Link } from 'react-router-dom'
 
 function Sidebar() {
     return (
-        <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion static" id="accordionSidebar">
+        <ul className="navbar-nav bg-gradient-success sidebar sidebar-dark accordion static" id="accordionSidebar">
 
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class=""></i>
+            <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div className="sidebar-brand-icon rotate-n-15">
+                    <i className=""></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">GUVI <sup>2</sup></div>
+                <div className="sidebar-brand-text mx-3">GUVI <sup>2</sup></div>
             </a>
 
-            <hr class="sidebar-divider my-0" />
+            <hr className="sidebar-divider my-0" />
 
 
-            <li class="nav-item active">
-                <Link class="nav-link" to={"/zen"}>
-                    <i class="fa-brands fa-youtube"></i>
+            <li className="nav-item active">
+                <Link className="nav-link" to={"/zen"}>
+                    <i className="fa-brands fa-youtube"></i>
                     <span>ZEN</span></Link>
             </li>
 
-            <li class="nav-item active">
-                <Link class="nav-link" to={"/courses"}>
-                    <i class="fa-solid fa-briefcase"></i>
+            <li className="nav-item active">
+                <Link className="nav-link" to={"/courses"}>
+                    <i className="fa-solid fa-briefcase"></i>
                     <span>Courses</span></Link>
             </li>
 
-            <li class="nav-item active">
-                <Link class="nav-link" to={"/codekata"}>
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+            <li className="nav-item active">
+                <Link className="nav-link" to={"/codekata"}>
+                    <i className="fas fa-fw fa-tachometer-alt"></i>
                     <span>Codekata</span></Link>
             </li>
 
-            <hr class="sidebar-divider" />
+            <hr className="sidebar-divider" />
 
 
 
-            <li class="nav-item active">
-                <a class="nav-link" href="https://www.guvi.in/webkata">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Webkata</span></a>
+            <li className="nav-item active">
+                <Link className="nav-link" to={"/webkata"}>
+                    <i className="fa-solid fa-code"></i>
+                    <span>Webkata</span></Link>
             </li>
 
-            <li class="nav-item active">
-                <Link class="nav-link" to={"/debagging"}>
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <li className="nav-item active">
+                <Link className="nav-link" to={"/debagging"}>
+                    <i className="fa-solid fa-wand-magic-sparkles"></i>
                     <span>Debugging</span></Link>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <span>IDE</span></a>
-            </li>
-            <hr class="sidebar-divider" />
+           
+            <hr className="sidebar-divider" />
 
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fa-brands fa-android"></i>
-                    <span>LeaderBoard</span></a>
+            <li className="nav-item active">
+                <Link className="nav-link" to={"/leaderboard"}>
+                    <i className="fa-brands fa-android"></i>
+                    <span>LeaderBoard</span></Link>
             </li>
 
-            <li class="nav-item active">
-                <Link class="nav-link" to={"/rewards"}>
-                    <i class="fa-solid fa-gift"></i>
+            <li className="nav-item active">
+                <Link className="nav-link" to={"/rewards"}>
+                    <i className="fa-solid fa-gift"></i>
                     <span>Rewards</span></Link>
             </li>
 
-            <li class="nav-item active">
-                <Link class="nav-link" to={"/referral"}>
-                    <i class="fa-solid fa-handshake"></i>
+            <li className="nav-item active">
+                <Link className="nav-link" to={"/referral"}>
+                    <i className="fa-solid fa-handshake"></i>
                     <span>Referral</span></Link>
             </li>
 
