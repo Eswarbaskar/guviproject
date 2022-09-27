@@ -1,5 +1,5 @@
 #login{
-    background-color:linen;
+    background-color:whitesmoke;
     width: 100%;
     padding: 20px;
     margin: 20px;
@@ -14,9 +14,14 @@
 .signup{
     padding: 10px;
     margin: 10px;
+    color: whitesmoke;
 
 }
 .image{
     margin: 10px;
     width: 100%;
+    
+}
+.topbar{
+    border-bottom: 1px solid green;
 }

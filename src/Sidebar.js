@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 function Sidebar() {
     return (
-        <ul className="navbar-nav bg-gradient-success sidebar sidebar-dark accordion static" id="accordionSidebar">
+        <ul className="navbar-nav bg-success sidebar sidebar-dark accordion static-top" id="accordionSidebar">
 
             <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div className="sidebar-brand-icon rotate-n-15">
-                    <i className=""></i>
+                    <i className="fa-brands fa-google"></i>
                 </div>
                 <div className="sidebar-brand-text mx-3">GUVI <sup>2</sup></div>
             </a>
@@ -17,7 +17,7 @@ function Sidebar() {
 
             <li className="nav-item active">
                 <Link className="nav-link" to={"/zen"}>
-                    <i className="fa-brands fa-youtube"></i>
+                   <i class="fa-solid fa-laptop-code"></i> 
                     <span>ZEN</span></Link>
             </li>
 
@@ -49,7 +49,7 @@ function Sidebar() {
                     <span>Debugging</span></Link>
             </li>
 
-           
+
             <hr className="sidebar-divider" />
 
             <li className="nav-item active">
@@ -70,9 +70,12 @@ function Sidebar() {
                     <span>Referral</span></Link>
             </li>
 
-
-
         </ul>
+
+
+
+
+
     )
 }
 

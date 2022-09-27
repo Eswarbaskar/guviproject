@@ -1,7 +1,9 @@
 import React from 'react'
 import { useFormik } from 'formik'
+import { useNavigate } from 'react-router-dom'
 
 function Zen() {
+    let navigate=useNavigate()
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -9,6 +11,7 @@ function Zen() {
         },
         onSubmit: values => {
             alert("WLECOME!!");
+            navigate("/intex.html")
         },
     })
     return (

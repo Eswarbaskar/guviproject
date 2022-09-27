@@ -17,7 +17,7 @@ import Leaderboard from './sidebarcomponents/Leaderboard';
 function App() {
   return (
     <BrowserRouter>
-      <div id="page-top">
+      
         <div id="wrapper">
 
           <Sidebar />
@@ -26,8 +26,9 @@ function App() {
               <Navbar />
               <div id="container-fluid">
                 <Routes>
+                  
+                  <Route path="/" element={<Signup/>}/>
                   <Route path="/login" element={<Login />} />
-                  <Route path="/signup" element={<Signup/>}/>
                   <Route path="/rewards" element={<Rewards/>}/>
                   <Route path="/referral" element={<Referral/>}/>
                   <Route path="/zen" element={<Zen/>}/>
@@ -44,7 +45,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      
 
     </BrowserRouter>
 

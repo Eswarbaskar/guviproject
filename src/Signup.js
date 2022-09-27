@@ -1,7 +1,11 @@
 import { useFormik } from 'formik'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
+ 
 
 function Signup() {
+    let navigate= useNavigate()
     const formik = useFormik({
         initialValues: {
             firstName: '',
@@ -11,7 +15,22 @@ function Signup() {
             phoneNumber: '',
         },
         onSubmit: values => {
-            alert("WWLECOME!!");
+            
+            navigate("/login")
+            Swal.fire({
+                title: 'Do you want to save the Password?',
+                showDenyButton: true,
+                showCancelButton: true,
+                confirmButtonText: 'Save',
+                denyButtonText: `Don't save`,
+              }).then((result) => {
+                
+                if (result.isConfirmed) {
+                  Swal.fire('Saved!', '', 'success')
+                } else if (result.isDenied) {
+                  Swal.fire('Changes are not saved', '', 'info')
+                }
+              })
         },
     })
     return (

@@ -35,6 +35,7 @@ function Webkata() {
             return <div className="col-lg-4">
               <div className="card shadow-lg p-3 mb-5 bg-white rounded" >
                 <div className="card-body">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_lKyd0Fj5cFEefQFdFKAuu8vot-0Dug2_MVMV7t4wiPKFj6yoaaXd9j-3HvIKswubbys&usqp=CAU" class="card-img-top" alt="..."></img>
                   <h5 className="card-title">{item.name}</h5>
                   <h6 className="card-subtitle mb-2 text-muted">{item.offer}</h6>
                   <div className="text-right">

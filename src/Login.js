@@ -1,14 +1,19 @@
 import React from 'react'
 import { useFormik } from 'formik'
+import { useNavigate } from 'react-router-dom'
+import swal from 'sweetalert'
 
 function Login() {
+    let navigate = useNavigate()
     const formik = useFormik({
         initialValues: {
             email: '',
             password: '',
         },
         onSubmit: values => {
-            alert("WLECOME!!");
+            navigate("/courses")
+            
+            swal("WELCOME!!", "Take Your Courses", "success")
         },
     })
     return (
